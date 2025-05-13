@@ -21,7 +21,9 @@ function UserData({ users }) {
                   {user.name}
                 </h3>
                 <p className="text-sm text-gray-500 w-full">{user.emp_id}</p>
-                <p className="text-sm text-gray-500 w-full">{user.role}</p>
+                <p className="text-sm text-gray-500 whitespace-nowrap">
+                  {user.role}
+                </p>
               </div>
               <button
                 className="text-xl font-medium w-full"
