@@ -30,9 +30,9 @@ function UserData({ users }) {
               </div>
               <button
                 className="text-xl font-medium w-full"
-                onClick={requestHandler}
+                onClick={() => requestHandler(user.id)}
               >
-                {requestSent ? "Request Sent" : "Follow"}
+                {requestSent[user.id] ? "Request Sent" : "Follow"}
               </button>
             </div>
           ))}
