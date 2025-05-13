@@ -8,7 +8,7 @@ function UserData({ users }) {
   return (
     <>
       <div className="w-full">
-        <div className=" max-w-md   border border-gray-500  ">
+        <div className=" max-w-md  mx-auto mt-10 border border-gray-500  rounded-lg">
           {users.map((user) => (
             <div
               key={user.id}
@@ -17,14 +17,17 @@ function UserData({ users }) {
               <img
                 src={user.profile_image}
                 alt={user.name}
-                className="w-12 h-12 mx-8 my-10 rounded-full object-cover"
+                className="w-15 h-15 mx-8 my-10 rounded-full object-cover"
               />
               <div>
-                <h3 className="text-2xl text-gray-500 w-full">{user.name}</h3>
+                <h3 className="text-xl text-gray-500 w-full">{user.name}</h3>
                 <p className="text-xl text-gray-500 w-full">{user.emp_id}</p>
                 <p className="text-xl text-gray-500 w-full">{user.role}</p>
               </div>
-              <button className="text-xl font-medium" onClick={requestHandler}>
+              <button
+                className="text-xl font-medium w-full"
+                onClick={requestHandler}
+              >
                 {requestSent ? "Request Sent" : "Follow"}
               </button>
             </div>
