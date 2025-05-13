@@ -11,9 +11,9 @@ function UserData({ users }) {
   return (
     <>
       <div className="w-full ">
-        <div className="max-w-2xl mx-auto mt-20  rounded-lg border">
+        <div className="max-w-2xl mx-auto mt-20  rounded-lg">
           {users.map((user) => (
-            <div key={user.id} className="flex items-center gap-2 p-0.5">
+            <div key={user.id} className="flex items-center gap-2 p-0.5 border">
               <img
                 src={user.profile_image}
                 alt={user.name}
