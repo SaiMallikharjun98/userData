@@ -17,7 +17,9 @@ function UserData({ users }) {
                 className="w-30 h-30 mx-8 my-10 rounded-full object-cover"
               />
               <div>
-                <h3 className="text-sm text-gray-500 w-fit">{user.name}</h3>
+                <h3 className="text-sm text-gray-500 whitespace-nowrap">
+                  {user.name}
+                </h3>
                 <p className="text-sm text-gray-500 w-full">{user.emp_id}</p>
                 <p className="text-sm text-gray-500 w-full">{user.role}</p>
               </div>
