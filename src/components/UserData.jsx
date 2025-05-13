@@ -10,8 +10,8 @@ function UserData({ users }) {
   };
   return (
     <>
-      <div className="w-full">
-        <div className="max-w-2xl mx-auto mt-20 border rounded-lg h-44">
+      <div className="w-full ">
+        <div className="max-w-2xl mx-auto mt-20  rounded-lg border">
           {users.map((user) => (
             <div key={user.id} className="flex items-center gap-2 p-0.5">
               <img
