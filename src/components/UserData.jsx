@@ -2,8 +2,11 @@ import React, { useState } from "react";
 
 function UserData({ users }) {
   let [requestSent, setRequestSent] = useState(false);
-  const requestHandler = () => {
-    setRequestSent((prev) => !prev);
+  const requestHandler = (userId) => {
+    setRequestSent((prev) => ({
+      ...prev,
+      [userId]: !prev[userId],
+    }));
   };
   return (
     <>
