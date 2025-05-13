@@ -8,11 +8,11 @@ function UserData({ users }) {
   return (
     <>
       <div className="w-full">
-        <div className="max-w-2xl mx-auto mt-10 border rounded-lg h-40">
+        <div className="max-w-2xl mx-auto mt-20 border rounded-lg h-45">
           {users.map((user) => (
             <div
               key={user.id}
-              className="flex items-center space-x-4 p-1"
+              className="flex items-center space-x-4 p-0.5"
             >
               <img
                 src={user.profile_image}
