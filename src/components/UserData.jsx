@@ -12,7 +12,7 @@ function UserData({ users }) {
           {users.map((user) => (
             <div
               key={user.id}
-              className="flex items-center space-x-4 p-0.5"
+              className="flex items-center space-x-8 p-0.5"
             >
               <img
                 src={user.profile_image}
