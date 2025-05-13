@@ -17,7 +17,7 @@ function UserData({ users }) {
               <img
                 src={user.profile_image}
                 alt={user.name}
-                className="w-20 h-20 mx-8 my-10 rounded-full object-cover"
+                className="w-30 h-30 mx-8 my-10 rounded-full object-cover"
               />
               <div>
                 <h3 className="text-sm text-gray-500 w-full">{user.name}</h3>
